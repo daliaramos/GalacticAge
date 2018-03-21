@@ -10,12 +10,12 @@ export class Date{
     let userYear = 2018 - this.userYear;
     return userYear * 31536000;
   }
-  // mercuryAge(){
-  //   return this.userAge * 4; //revolution period: 365 earth days divided by 87 mercury days = 4
-  // }
-  // venusAge(){
-  //  return this.userAge * 1.6; // revolution period: 365 earth days divided by 224.7 venus days = 1.6
-  // }
+  mercuryAge(){
+    return this.userAge * 4; //revolution period: 365 earth days divided by 87 mercury days = 4
+  }
+  venusAge(){
+   return this.userAge * 1.6; // revolution period: 365 earth days divided by 224.7 venus days = 1.6
+  }
   // marsAge(){
   //   return this.userAge * .53129548762;// revolution period: 365 earth days divided by 224.7 venus days = .53129548762
   //
