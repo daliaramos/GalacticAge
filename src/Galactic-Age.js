@@ -6,10 +6,10 @@ export class Date{
   userAgeToSeconds(){
     return this.userAge * 31536000;
   }
-  // userYearToSeconds(){
-  //   let userYear = 2018 - this.userYear;
-  //   return userYear * 31536000;
-  // }
+  userYearToSeconds(){
+    let userYear = 2018 - this.userYear;
+    return userYear * 31536000;
+  }
   // mercuryAge(){
   //   return this.userAge * 4; //revolution period: 365 earth days divided by 87 mercury days = 4
   // }
