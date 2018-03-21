@@ -3,9 +3,9 @@ export class Date{
     this.userAge = userAge;
     this.userYear = userYear;
   }
-  // userAgeToSeconds(){
-  //   return this.userAge * 31536000;
-  // }
+  userAgeToSeconds(){
+    return this.userAge * 31536000;
+  }
   // userYearToSeconds(){
   //   let userYear = 2018 - this.userYear;
   //   return userYear * 31536000;
