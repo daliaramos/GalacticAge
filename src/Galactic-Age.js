@@ -23,4 +23,25 @@ export class Date{
   jupiterAge(){
     return this.userAge * .00707364341;// revolution period: 365 earth days divided by 51600 jupiter days = .00707364341
   }
+
+  mercuryLifeExpectancy(){
+    return Math.round((80 - this.userAge) * .24)
+  }
+  venusLifeExpectancy(){
+    return Math.round((80 - this.userAge) * .62)
+  }
+  marsLifeExpectancy(){
+    return Math.round((80 - this.userAge) * 1.88)
+  }
+  jupiterLifeExpectancy(){
+    return Math.round((80 - this.userAge) * 11.86)
+  }
+
+  lifeSurpassed(){
+    if(this.userAge > 80) {
+        return "you've surpassed the life expectancy by " + (this.userAge - 80);
+    } else {
+      return false;
+    }
+  }
 }
